@@ -1,0 +1,25 @@
+{
+  "name": "plnexus",
+  "version": "1.0.0",
+  "description": "plnexus - Hexagonal Market Data Engine",
+  "type": "module",
+  "main": "main.js",
+  "scripts": { 
+    "start": "node main.js",
+    "dev": "node --watch main.js",
+    "test": "vitest"
+  },
+  "imports": {
+    "#shared/*": "./shared/*.js",
+    "#logger": "./shared/logger.js",
+    "#tracer": "./shared/Tracer.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "winston": "^3.11.0",
+    "winston-daily-rotate-file": "^4.7.1"
+  },
+  "devDependencies": {
+    "vitest": "^1.0.0"
+  }
+}

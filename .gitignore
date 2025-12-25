@@ -1,0 +1,10 @@
+node_modules/
+logs/
+*.log
+.env
+.DS_Store
+dist/
+node_modules/
+infrastructure/adapters/api/FinnhubAdapter.js
+infrastructure/config/validators/FinnhubConfig.js
+*~

@@ -1,0 +1,25 @@
+{
+  "version": "1.1.0",
+  "description": "Registry for PLNexus Market Discovery Adapters",
+  "adapters": {
+    "1": {
+      "name": "Live Market Data",
+      "description": "Production adapter using the Finnhub REST API",
+      "path": "./infrastructure/adapters/api/FinnhubAdapter.js",
+      "className": "FinnhubAdapter",
+      "requiresConfig": true,
+      "configKey": "Finnhub"
+    },
+    "2": {
+      "name": "Mock Market Simulation",
+      "description": "Local development adapter for testing without API keys",
+      "path": "./infrastructure/adapters/api/MockMarketAdapter.js",
+      "className": "MockMarketAdapter",
+      "requiresConfig": false
+    }
+  },
+  "defaults": {
+    "fallbackMode": "2",
+    "defaultSymbol": "SPX"
+  }
+}
