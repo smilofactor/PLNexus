@@ -8,3 +8,5 @@ node_modules/
 infrastructure/adapters/api/FinnhubAdapter.js
 infrastructure/config/validators/FinnhubConfig.js
 *~
+config/adapters.manifest.json
+straceLogs
